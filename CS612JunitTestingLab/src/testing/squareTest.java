@@ -1,10 +1,10 @@
 package testing;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class squareTest {
+public class squareTest {
 
 	@Test
 	public void test() {
@@ -14,5 +14,6 @@ class squareTest {
 		assertEquals(25, output);
 	}
 
-
 }
+
+

@@ -17,9 +17,9 @@ public class divideTest {
 	@Test
 	public void test2() {
 		JunitTesting test = new JunitTesting();
-		double output = test.divide(10,0);
+		Throwable exception = assertThrows(ArithmeticException.class, () -> test.divide(10,0));
+		assertEquals("/ by zero", exception.getMessage());
 		
-		assertEquals(0, output, 0.001);
 	}
 
 
